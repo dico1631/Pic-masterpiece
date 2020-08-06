@@ -1,0 +1,762 @@
+{% extends 'font_detect/base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <p class="note note-info h1"style="text-align: center"><strong>사진을 명화로 바꿔보세요!</strong></p>
+    <form method="POST" action="{% url 'showchange' %}" enctype="multipart/form-data" class="form-mypicture">
+      <h1 class="mb-0 py-1">
+        <a class="black-text font-weight-bold">스타일을 적용 할 이미지를 선택해 주세요♡ </a>
+      </h1>
+      <h2 class="mb-0 py-1">
+        <p class="h1"> {% csrf_token %} </p>
+        <p> {{form.as_p}}</p>
+      </h2>
+         
+
+      <br><br><br>
+
+      
+      <!--Accordion wrapper-->
+      <div class="accordion md-accordion accordion-1" id="accordionEx23" role="tablist">
+        <div class="card">
+          <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading96">
+            <h5 class="text-uppercase mb-0 py-1">
+              <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapse96" aria-expanded="true"
+                aria-controls="collapse96">
+                Pablo Picasso
+              </a>
+            </h5>
+          </div>
+          <div id="collapse96" class="collapse show" role="tabpanel" aria-labelledby="heading96"
+            data-parent="#accordionEx23">
+            <div class="card-body">
+              <div class="row my-4">
+
+                <!--picasso picasso picasso picasso picasso Carousel Wrapper-->
+                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                  <!--Controls-->
+                    <div class="controls-top">
+                      <a class="btn btn-info" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                      <a class="btn btn-info" href="#multi-item-example" data-slide="next"><i
+                          class="fas fa-chevron-right"></i></a>
+                    </div>
+                  <!--/.Controls-->
+                 
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjQw/MDAxNTg5NDE5NzU3Mjk4.tWoKyHg9mPu6PYZV4LFAwaJQPeJpug3ptZPtyUoIf-Qg.koe8eQyVVlALXtT-V4PQvpH6TDsGInErv1VYbYWgfSAg.JPEG.bitch563/00_001.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTQw/MDAxNTg5NDE5NzU3MzA3.0hfOV6wBBNTseI2V5umnmXPhcgC3o73ijB5RtjY06iEg.QGL8dC7sB0KnDSeYhHVk2HYH-dyaal4h5j6nXcfc2OQg.JPEG.bitch563/00_002.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjg5/MDAxNTg5NDE5NzU3MzA1.4w9JEaRs9cTQvHtIWeF8SHa-ZmIvicdvoSCfZ9JeWM4g.0ja9YsT0d5rl0mjvcrsqgnQvHLENhsQDjancftdaWZgg.JPEG.bitch563/00_005.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTYz/MDAxNTg5NDE5NzU3MzQw.tDANsxwbGlZsDOeyCMiU5zgmksJR4pkgcOHf227LbQAg.1fjDRgm8NosqFXrWrE7i22P1sLUpilFp-D9DVgzIGSIg.PNG.bitch563/00_006.png?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTAx/MDAxNTg5NDE5NzU3OTMy.cu8RN3xdQYMljpoy1Wp1-fV40lQ4pNB8GYpU7rMOntEg.RHq41ACRr8f7EjcAP6rl34lyjjt6hTpU7e34wjBSh2Eg.JPEG.bitch563/00_031.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfODUg/MDAxNTg5NDE5NzU3MzY0.j0W48pGc5i0E4S4OfeRXREBUpj452-mx6qbl37KWx_Qg.dtOBC3NE0NzzV8wW9S2n5Xq19j4Y0Oaqpf3T_EyW-BMg.GIF.bitch563/00_008.gif?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.Second slide-->
+
+                    <!--Third slide-->
+                    <div class="carousel-item">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfNTIg/MDAxNTg5NDE5NzU3NjE4.vUoBiuv4hYvL09I7TAKo5wQlh3ntDMvFiTZPnG-GuCUg.iI0Hmx-0d20D6NWDQP5yOELtIJM3li0BZ6raSn4g53sg.JPEG.bitch563/00_022.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjYy/MDAxNTg5NDE5NzU4NDMx.Y8_zN-mWS1VklgmhVLBbVhfnq96vv8MBS7slTbXvQpMg.HkviG96MLbjuo4eDvI2FyYUj3KbQEAE0q9xpR5VYeZUg.JPEG.bitch563/00_046.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTcy/MDAxNTg5NDE5NzU3ODgx.ww6JAq22X5Ga5tDQ6ACmQIxiKvyTaeIiCJb8ZhDYqoIg.0xxQ2GwJ73HGaHWci-y-vvzEF65c2rP2_MYkiof2Bhgg.JPEG.bitch563/00_030.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.Third slide-->
+
+                  </div>
+                  <!--/.Slides-->
+
+                </div>
+                <!--/.Carousel Wrapper-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
+            <h5 class="text-uppercase mb-0 py-1">
+              <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapse97"
+                aria-expanded="false" aria-controls="collapse97">
+                Vincent Van Gogh
+              </a>
+            </h5>
+          </div>
+          <div id="collapse97" class="collapse" role="tabpanel" aria-labelledby="heading97"
+            data-parent="#accordionEx23">
+            <div class="card-body">
+              <div class="row my-4">
+
+                <!--gogh gogh gogh gogh gogh gogh gogh gogh gogh Carousel Wrapper-->
+                <div id="multi-item-example2" class="carousel slide carousel-multi-item" data-ride="carousel">
+                  <!--Controls-->
+                  <div class="controls-top">
+                    <a class="btn btn-info" href="#multi-item-example2" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                    <a class="btn btn-info" href="#multi-item-example2" data-slide="next"><i
+                        class="fas fa-chevron-right"></i></a>
+                  </div>
+                  <!--/.Controls-->
+
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjg0/MDAxNTg5NDE5ODM5NzIx.cH93a9Wk9mqVutehnS4SsFfpghuAKuPA-kC7zdIAHzIg._fE_fscfIilax4H0W73KQ5V6gdtxA0O8Ftbbg9BRgLEg.JPEG.bitch563/01_001.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMzQg/MDAxNTg5NDE5ODM5NzE2.eO4Bey7tB3ZohFS2wCFN7EHmgNzCKgZjyz1CiGCHV1Qg.54v2Y8wu_E0844vyzhhJqpCBwonfllbn1rInuP9zneog.JPEG.bitch563/01_002.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjc3/MDAxNTg5NDE5ODM5NzM0.me6bkzLN-JZCmg796dCs2GmMYkdUpO86910t6mXH-t8g.-BUh0kM2Q79jxx7g5_fZeGx8AV7BAsVFS-YzAnLX23gg.JPEG.bitch563/01_004.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfNDkg/MDAxNTg5NDE5ODM5NzIw.WFiekdTMNSp62uT7euV5lsKztAbs30I6DME5jY8ZdZEg.MwieccljessFmwuyqcz0EgxUHPC6ZNCo9C67xMuIm8Eg.JPEG.bitch563/01_009.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjU3/MDAxNTg5NDE5ODQwOTAw._yJQzpW8xIZz3oXukrZ49D5KMUR1LBlxp3iaPcbPPNgg.MDaYKrdyfurpH42dE3arDu3Hf8FRPpy7MsIp-9vCOLsg.JPEG.bitch563/01_043.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfOTcg/MDAxNTg5NDE5ODQwMDA1.9NrgbBHWuF1Svrnb4u-mN0_Rxnf1P-QNuFNOFMtOYiAg.J4LA0QqksWhx4yRBU5esorYrX7a8jdKztYwyFpSE5B8g.JPEG.bitch563/01_011.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.Second slide-->
+
+                    <!--Third slide-->
+                    <div class="carousel-item">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTQ3/MDAxNTg5NDE5ODM5NzE5.ZfWoFM0sQs_mepgz5eBq9aMrhznFAdzQ_MR3rrzfdVsg.S_GJvjVTigy99Zu4wg047wLtlLzEitgzHLMUEuYT0G4g.JPEG.bitch563/01_006.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTEx/MDAxNTg5NDE5ODM5NzEw.NrrbKjc8GgmnqufReebyRZTrVE-oK664mKu9M1WXTEcg.44pI-uSB7s-0BzXYamGVIgjU8ArPi_4qPVrqCCvbfb8g.JPEG.bitch563/01_008.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjc1/MDAxNTg5NDE5ODQwMjg0.lWjNflSnhN-uxsBlnBCuvviJSz4Q0ibDkeKIeoMINkIg.wdQTdi2GYPJUd7a9L5G0n1FrKyH0h0V9F9n5rS0eDLsg.JPEG.bitch563/01_026.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.Third slide-->
+
+                  </div>
+                  <!--/.Slides-->
+
+                </div>
+                <!--/.Carousel Wrapper-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading98">
+            <h5 class="text-uppercase mb-0 py-1">
+              <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapse98"
+                aria-expanded="false" aria-controls="collapse98">
+                Claude Monet
+              </a>
+            </h5>
+          </div>
+          <div id="collapse98" class="collapse" role="tabpanel" aria-labelledby="heading98"
+            data-parent="#accordionEx23">
+            <div class="card-body">
+              <div class="row my-4">
+                
+                <!--monet monet monet monet monet monet monet monet Carousel Wrapper-->
+                <div id="multi-item-example3" class="carousel slide carousel-multi-item" data-ride="carousel">
+                  <!--Controls-->
+                  <div class="controls-top">
+                    <a class="btn btn-info" href="#multi-item-example3" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                    <a class="btn btn-info" href="#multi-item-example3" data-slide="next"><i
+                        class="fas fa-chevron-right"></i></a>
+                  </div>
+                  <!--/.Controls-->
+
+                  <!--Indicators-->
+                  <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example3" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example3" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example3" data-slide-to="2"></li>
+                  </ol>
+                  <!--/.Indicators-->
+
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTQx/MDAxNTg5NDE5ODgzOTMx.YQlC3dyGHIhydoRfcTo867aKWfRMroRftAJuoX56_bog.fhN0b6fE7VK--SOMiqItpkOhAGwOoaCkC8QJiqTlkAgg.JPEG.bitch563/03_012.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfNTQg/MDAxNTg5NDE5ODgzOTM0.p38wRPdIwIH4UvQJHlQhF4DRie0kjCbJdEa7aTjbzoAg.jYOxaA6O9y5krbxUnJC2FFooU6j2FlckA02UnMcpnLwg.JPEG.bitch563/03_014.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTY2/MDAxNTg5NDE5ODgzOTgy.PeWztqTta2ZN7sX27LoDHGjkmqrpLjQ8laI6WTx2utsg.GNKSr78Nkwl8SPBPP3_7gMAKJQe_H94X5vsvaPn1pDMg.JPEG.bitch563/03_017.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMzUg/MDAxNTg5NDE5ODg0MjA4.suMMB4Ke6CanMXAO_deSpbjbUMN8BN0Sor9608FfR9cg.AZDjubRLFDYPtfN6L5gy66xLC5IcTm0nLSXnrTgpc4Eg.JPEG.bitch563/03_020.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjE2/MDAxNTg5NDE5ODgzNjQ0.JocI4YZmqbzh-tLrb9mDx7qEvK9kX2-gfIAs0JNGt6kg.XXUdEAPhfTKkJaeF5QZM10lc2vwlTsSORfJjftjfvjgg.JPEG.bitch563/03_004.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTgw/MDAxNTg5NDE5ODg0MzYy.Eq3Lx1VSb1g0ZPeYNh_c8iUQQyvOCK6nUD0J9B2Pmn8g.CLfww5le9KuB2Aah94LY1tLE6NEq7EZxWqcC1BYtwmcg.JPEG.bitch563/03_027.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.Second slide-->
+
+                    <!--Third slide-->
+                    <div class="carousel-item">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjk1/MDAxNTg5NDE5ODg0Mjcy.G9u0Huz9qIG3X36Y3VWTvOybwt2hN7FNiwT41Mavf0wg.u-CsVfMWj6dLbCxul0F_nnIE-z3oRWB7O-G9auHYBjUg.JPEG.bitch563/03_025.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjg1/MDAxNTg5NDE5ODg0NTQw.Cb6betvtx8iMb_ToKScHNyJ2omoDWj2OxYvzwvJxQokg.FsKotlpsxVSfXXjfeLyFyBbEwDMCdKLADqoobr76DEMg.JPEG.bitch563/03_030.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTAx/MDAxNTg5NDE5ODg0ODU3.tEafj20mTWjCHo9NW4n_Da3Dy0XLg5WMkIgGECqpOQgg.TxA4H7ajUhomU9eYDy8H_FP1u0pnwq6JJgaQnaFyxWEg.JPEG.bitch563/03_044.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.Third slide-->
+
+                  </div>
+                  <!--/.Slides-->
+
+                </div>
+                <!--/.Carousel Wrapper-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading99">
+            <h5 class="text-uppercase mb-0 py-1">
+              <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapse99"
+                aria-expanded="false" aria-controls="collapse99">
+                Edvard Munch
+              </a>
+            </h5>
+          </div>
+          <div id="collapse99" class="collapse" role="tabpanel" aria-labelledby="heading99"
+            data-parent="#accordionEx23">
+            <div class="card-body">
+              <div class="row my-4">
+                
+                <!--munch munch munch munch munch munch munch munch Carousel Wrapper-->
+                <div id="multi-item-example4" class="carousel slide carousel-multi-item" data-ride="carousel">
+                  <!--Controls-->
+                  <div class="controls-top">
+                    <a class="btn btn-info" href="#multi-item-example4" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                    <a class="btn btn-info" href="#multi-item-example4" data-slide="next"><i
+                        class="fas fa-chevron-right"></i></a>
+                  </div>
+                  <!--/.Controls-->
+
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTUg/MDAxNTg5NDE5OTIwODMx.SJd-vjZOiLy50OyiiaNHez5bOOKp8jQfNhC2ACp74fcg.ra1ucv-10BwukoVJb3TIWTdx_PoSPogIuPxXBFldxlEg.JPEG.bitch563/04_001.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTQ1/MDAxNTg5NDE5OTIxMDgx.1A9snkxV67Yk8E0xCZbXoyhn5oZ0sBF8lPL8HeBT9B8g.nOafFjtIIBCbMuOmWiYf9d3RPBdamMkfUqeleKwyXfwg.JPEG.bitch563/04_020.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTIg/MDAxNTg5NDE5OTIwODM4.V8oryPMD7rBPm_fLFW3Z8RS5dcy8SAh3ryJykX8UNoYg.mxX6ktFDhdkDgYlgrIVxHCpSMhpwt54mGs6L1BgAno4g.JPEG.bitch563/04_012.jpg?type=w773"
+                            alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjU4/MDAxNTg5NDE5OTIwODI3.DRHC7FKcGCwo644JldifEGeV5aI9tpVlFO-2l74Y_IIg.t0ttiCu2Prj7yz3nJYMU3mkJgmnxCq28Oy4GGCpf9QMg.JPEG.bitch563/04_002.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTE2/MDAxNTg5NDE5OTIwODI4.hDiO-87Kl4iqBLF78drwjsrQ3oC_b1-eyschM6UMpfUg.Vz1xhevexR-0MkGIfC-6aC6Hfrl0oboeuH7Kvmkw6Iog.JPEG.bitch563/04_007.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjk1/MDAxNTg5NDE5OTIwODI4.M1JEPlY38Hyz29lEZvIbvc04L1qrWRW5wEyh-rGIiMEg.Zey2Yd4k3rT4hUfD63GgDBtY8-2PQYLzbbtRilWbC9Ag.JPEG.bitch563/04_005.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.Second slide-->
+
+                    <!--Third slide-->
+                    <div class="carousel-item">
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMTA0/MDAxNTg5NDE5OTIxMTY0.yb_G0yjwXAdx5Lhl25uYExYE0l6VaSprPxINPgRtPzkg.pOvpIp4Gj1OPIeitzJ-4HwSB3jYD-waHfObSC9TOKqog.JPEG.bitch563/04_040.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMzEg/MDAxNTg5NDE5OTIxMzk0.IKh5c57SkYCH822XX3jn5CfNSMx2JrKkeGFQEMiM2eog.nNN0Db9YU05zVfoFhWt8OaZUESWINnHQmVpHSIC6kvsg.JPEG.bitch563/04_042.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img'>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top"
+                            src="https://postfiles.pstatic.net/MjAyMDA1MTRfMjQ0/MDAxNTg5NDE5OTIxNDA5.0fQmZOfMQMDfbNE80o-sDduCKB-25VP3OdB6_O31Ou4g.GSTLNrbpoz_iM4rE-v_XMQUurDJCLUclaMzbT5T-Qnkg.JPEG.bitch563/04_049.jpg?type=w773" alt="Card image cap">
+                          <div class="card-body">
+                            <label class="container-radio"> Pick Style!
+                              <input type="radio" name='style_img' checked>
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.Third slide-->
+
+                  </div>
+                  <!--/.Slides-->
+
+                </div>
+                <!--/.Carousel Wrapper-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Accordion wrapper-->
+      <br><br>
+
+      <button type="submit" class="btn btn-info"> CHANGE ! </button>
+
+    </form>
+      <br><br><br>
+
+
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $("button[type='submit']").click(function(){
+              var radioButtons = $("input:radio[name='style_img']");
+              var selectedIndex = radioButtons.index(radioButtons.filter(':checked'));
+              var imgs = $("img[class='card-img-top']");
+              img_link = imgs[selectedIndex].getAttribute('src')
+              radioButtons[selectedIndex].setAttribute('value', img_link)
+          });
+        });
+      </script>
+
+</body>
+</html>
+{% endblock %}
